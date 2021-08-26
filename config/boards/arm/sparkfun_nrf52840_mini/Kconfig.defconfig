@@ -4,7 +4,7 @@
 if BOARD_NICE_NANO || BOARD_NICE_NANO_V2
 
 config BOARD
-	default "nice_nano"
+	default "sparkfun_nrf52840_mini"
 
 if USB
 
