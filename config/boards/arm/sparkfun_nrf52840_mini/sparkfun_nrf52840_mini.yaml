@@ -1,5 +1,5 @@
 identifier: sparkfun_nrf52840_mini
-name: nice!nano
+name: sf_52840
 type: mcu
 arch: arm
 toolchain:
