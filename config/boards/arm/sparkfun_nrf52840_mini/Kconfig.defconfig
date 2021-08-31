@@ -30,13 +30,15 @@ endif # BOARD_SF_52840 || BOARD_SF_52840_V2
 if BOARD_SF_52840
 
 config ZMK_BATTERY_VOLTAGE_DIVIDER
-	default y
+# default y
+	default n
 
 endif # BOARD_SF_52840
 
 if BOARD_SF_52840_V2
 
 config ZMK_BATTERY_NRF_VDDH
-	default y
+# default y
+	default n
 
 endif # BOARD_SF_52840_V2
