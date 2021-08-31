@@ -43,15 +43,18 @@
 };
 
 &i2c0 {
-	compatible = "nordic,nrf-twi";
-	sda-pin = <8>;
-	scl-pin = <11>;
+	status = "okay";
+//	compatible = "nordic,nrf-twi";
+// port * 32 + pin
+//	sda-pin = <8>;
+//	scl-pin = <11>;
 };
 
 &uart0 {
-	compatible = "nordic,nrf-uarte";
-	tx-pin = <17>;
-	rx-pin = <15>;
+	status = "okay";
+//	compatible = "nordic,nrf-uarte";
+//	tx-pin = <17>;
+//	rx-pin = <15>;
 };
 
 &usbd {
