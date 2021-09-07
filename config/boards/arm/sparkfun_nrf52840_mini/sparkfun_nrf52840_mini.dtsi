@@ -17,13 +17,13 @@
 		zephyr,flash = &flash0;
 	};
 
-	// leds {
-	// 	compatible = "gpio-leds";
-	// 	blue_led: led_0 {
-	// 		gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
-	// 		label = "Blue LED";
-	// 	};
-	// };
+	leds {
+		compatible = "gpio-leds";
+		blue_led: led_0 {
+			gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
+			label = "Blue LED";
+		};
+	};
 };
 
 &adc {
