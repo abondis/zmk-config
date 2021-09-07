@@ -7,6 +7,7 @@
 /dts-v1/;
 #include "sparkfun_nrf52840_mini.dtsi"
 
+/*`
 / {
 	ext-power {
 		compatible = "zmk,ext-power-generic";
@@ -22,3 +23,4 @@
 		full-ohms = <(2000000 + 806000)>;
 	};
 };
+*/
