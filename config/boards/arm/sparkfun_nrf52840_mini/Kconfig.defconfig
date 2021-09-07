@@ -44,8 +44,8 @@ endif # BOARD_SF_52840 || BOARD_SF_52840_V2
 if BOARD_SF_52840
 
 config ZMK_BATTERY_VOLTAGE_DIVIDER
-  default y
-#	default n
+#  default y
+ 	default n
 
 endif # BOARD_SF_52840
 
