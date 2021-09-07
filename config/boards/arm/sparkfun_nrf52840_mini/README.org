@@ -1,0 +1,13 @@
+* Sparkfun NRF52840 Mini
+
+mostly pin compatible with pro micro, with configurable GPIOs
+
+** Pins D8/D9 (GPIO0 9 and 10) not working
+
+Those pins are for NFC by default. Changing it to GPIO is a one time change
+which might be annoying to revert
+
+- Sparkfun info: https://learn.sparkfun.com/tutorials/nrf52840-advanced-development-with-the-nrf5-sdk/all
+- NRF info: https://developer.nordicsemi.com/nRF_Connect_SDK_dev/doc/PR-3842/kconfig/CONFIG_NFCT_PINS_AS_GPIOS.html#cmdoption-arg-CONFIG_NFCT_PINS_AS_GPIOS
+
+** Pin mapping
