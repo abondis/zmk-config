@@ -13,6 +13,17 @@ which might be annoying to revert
 - Sparkfun info: https://learn.sparkfun.com/tutorials/nrf52840-advanced-development-with-the-nrf5-sdk/all
 - NRF info: https://developer.nordicsemi.com/nRF_Connect_SDK_dev/doc/PR-3842/kconfig/CONFIG_NFCT_PINS_AS_GPIOS.html#cmdoption-arg-CONFIG_NFCT_PINS_AS_GPIOS
 
+*** In defconfig
+
+Tested on a right hand microdox:
+
+#+begin_src
+# change pins 9 and 10 to GPIOS instead of NFC
+CONFIG_NFCT_PINS_AS_GPIOS=y
+#+end_src
+
+
+*** In the CMAKE
 The commented lines in =board.cmake= have been tested on a left hand microdox:
 
 #+begin_src
