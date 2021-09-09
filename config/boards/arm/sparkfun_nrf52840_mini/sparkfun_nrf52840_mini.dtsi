@@ -74,7 +74,7 @@
 
 		sd_partition: partition@0 {
 			label = "softdevice";
-			reg = <0x00000000 0x00026000>;
+			reg = <0x00001000 0x00025000>;
 		};
 		code_partition: partition@26000 {
 			label = "code_partition";
@@ -92,12 +92,15 @@
 		 */
 		storage_partition: partition@ec000 {
 			label = "storage";
-			reg = <0x000ec000 0x00008000>;
+			//reg = <0x000ec000 0x00008000>;
+			reg = <0x000ec000 0x00007000>;
+
 		};
 
 		boot_partition: partition@f4000 {
 			label = "adafruit_boot";
-			reg = <0x000f4000 0x0000c000>;
+			// reg = <0x000f4000 0x0000c000>;
+			reg = <0x000f4000 0x000b0000>;
 		};
 	};
 };
