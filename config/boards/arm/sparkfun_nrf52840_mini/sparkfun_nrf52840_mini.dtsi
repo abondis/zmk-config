@@ -8,8 +8,8 @@
 #include "arduino_pro_micro_pins.dtsi"
 
 / {
-	model = "sf 52840";
-	compatible = "sparkfun,mini,nrp52840";
+	model = "sparkfun_nrf52840_mini";
+	compatible = "sparkfun,mini,nrf52840";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
