@@ -33,6 +33,8 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
+
+# Left
       - name: West Build (Microdox Left)
         run: west build -s zmk/app -b sparkfun_nrf52840_mini -- -DSHIELD=microdox_mod_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Microdox DTS File
@@ -47,6 +49,8 @@ jobs:
         with:
           name: firmware
           path: microdox_mod_left_sparkfun_nrf52840_mini.uf2
+
+# Right
       - name: West Build (Microdox Right)
         run: west build --pristine -s zmk/app -b sparkfun_nrf52840_mini -- -DSHIELD=microdox_mod_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
@@ -59,3 +63,16 @@ jobs:
         with:
           name: firmware
           path: microdox_mod_right_sparkfun_nrf52840_mini.uf2
+
+
+# Reset
+      - name: West Build (sparkfun nrf52840 mini BLE reset)
+        run: west build --pristine -s zmk/app -b sparkfun_nrf52840_mini -- -DSHIELD=settings_reset -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+
+      - name: Rename zmk.uf2
+        run: cp build/zephyr/zmk.uf2 sparkfun_nrf52840_mini_settings_reset.uf2
+      - name: Archive (sparkfun_nrf52840_mini settings_reset)
+        uses: actions/upload-artifact@v2
+        with:
+          name: firmware
+          path: sparkfun_nrf52840_mini_settings_reset.uf2
