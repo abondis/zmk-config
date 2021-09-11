@@ -66,6 +66,8 @@ jobs:
 
 
 # Reset
+      - name: purge
+        run: rm -rf build
       - name: West Build (sparkfun nrf52840 mini BLE reset)
         run: west build --pristine -s zmk/app -b sparkfun_nrf52840_mini -- -DSHIELD=settings_reset -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
