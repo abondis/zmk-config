@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      # image: zmkfirmware/zmk-build-arm:2.5 # edit 20210910 ... jic
-      image: zmkfirmware/zmk-build-arm:2.4
+      image: zmkfirmware/zmk-build-arm:2.5 # edit 20210910 ... jic
+        # image: zmkfirmware/zmk-build-arm:2.4
     name: Build
     steps:
       - name: Checkout
