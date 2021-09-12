@@ -1,10 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_MICRODOX_LEFT
+if SHIELD_MICRODOX_MOD_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Microdox Left"
+	default "Microdox Mod Left"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
@@ -12,14 +12,14 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 endif
 
 
-if SHIELD_MICRODOX_RIGHT
+if SHIELD_MICRODOX_MOD_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Microdox Right"
+	default "Microdox Mod Right"
 
 endif
 
-if SHIELD_MICRODOX_LEFT || SHIELD_MICRODOX_RIGHT
+if SHIELD_MICRODOX_MOD_LEFT || SHIELD_MICRODOX_MOD_RIGHT
 
 config ZMK_SPLIT
 	default y

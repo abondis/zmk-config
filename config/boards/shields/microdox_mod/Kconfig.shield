@@ -1,8 +1,8 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_MICRODOX_LEFT
+config SHIELD_MICRODOX_MOD_LEFT
 	def_bool $(shields_list_contains,microdox_mod_left)
 
-config SHIELD_MICRODOX_RIGHT
+config SHIELD_MICRODOX_MOD_RIGHT
 	def_bool $(shields_list_contains,microdox_mod_right)
