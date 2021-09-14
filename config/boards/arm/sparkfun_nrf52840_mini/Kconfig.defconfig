@@ -45,8 +45,8 @@ config ZMK_BATTERY_VOLTAGE_DIVIDER
  	default n
 
 config ZMK_BATTERY_NRF_VDDH
-	default y
- 	# default n
+# default y
+ 	default n
 
 endif # BOARD_SF_52840
 

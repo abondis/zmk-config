@@ -16,8 +16,8 @@
 
 
 / {
-	vbatt {
-		compatible = "zmk,battery-nrf-vddh";
-		label = "BATTERY";
-	};
+//	vbatt {
+//		compatible = "zmk,battery-nrf-vddh";
+//		label = "BATTERY";
+//	};
 };
