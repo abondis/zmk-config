@@ -18,12 +18,12 @@
 // |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
-                        bindings = <
    // &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
-   &bt BT_CLR &out OUT_TOG &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
    // &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
+   // &kp Z 1 &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
+                        bindings = <
+   &bt BT_CLR &out OUT_TOG &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
    &bt BT_SEL 0 &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
-   //&kp Z 1 &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
    &bt BT_SEL 1 &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
           &kp LGUI &mo 1 &kp LSHFT &kp SPACE &mo 2 &kp RALT
                         >;
