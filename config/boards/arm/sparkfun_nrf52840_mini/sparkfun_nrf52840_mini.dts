@@ -6,8 +6,6 @@
 
 /dts-v1/;
 #include "sparkfun_nrf52840_mini.dtsi"
-
-/ {
 //	ext-power {
 //		compatible = "zmk,ext-power-generic";
 //		label = "EXT_POWER";
@@ -16,6 +14,8 @@
 //		init-delay-ms = <10>;
 //	};
 
+
+/ {
 	vbatt {
 		compatible = "zmk,battery-nrf-vddh";
 		label = "BATTERY";
