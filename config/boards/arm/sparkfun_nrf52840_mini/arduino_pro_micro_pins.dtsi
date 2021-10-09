@@ -5,7 +5,7 @@
  */
 
 / {
-	pro_micro_d: connector_d {
+	pro_micro: connector_d {
 		compatible = "arduino-pro-micro";
 		#gpio-cells = <2>;
 		gpio-map-mask = <0xffffffff 0xffffffc0>;
@@ -28,7 +28,7 @@
 			;
 	};
 
-	pro_micro_a: connector_a {
+	pro_micro: connector_a {
 		compatible = "arduino-pro-micro";
 		#gpio-cells = <2>;
 		gpio-map-mask = <0xffffffff 0xffffffc0>;
