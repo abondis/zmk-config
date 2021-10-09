@@ -14,4 +14,5 @@
 		, <&pro_micro_a  0 GPIO_ACTIVE_HIGH>
 		, <&pro_micro_d 15 GPIO_ACTIVE_HIGH>
 		;
+	debounce-period = <20>;
 };
