@@ -103,4 +103,14 @@
         inversion-on;
         prechargep = <0x22>;
     };
+    glidepoint: glidepoint@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "okay";
+        dr-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "2x";
+        sleep;
+        no-taps;
+    };
 };
