@@ -6,10 +6,10 @@ url: https://github.com/sadekbaroudi/ffkb/
 requires:
   - pro_micro
 exposes:
-  - i2c_oled
+  # - i2c_oled
   - i2c_glidepoint
 features:
   - keys
   - encoder
-  - display
-  - underglow
+  # - display
+  # - underglow

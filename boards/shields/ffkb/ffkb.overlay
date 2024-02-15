@@ -91,26 +91,39 @@
 &pro_micro_i2c {
     status = "okay";
 
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <64>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <63>;
-        inversion-on;
-        prechargep = <0x22>;
-    };
+    // oled: ssd1306@3c {
+    //     compatible = "solomon,ssd1306fb";
+    //     reg = <0x3c>;
+    //     width = <128>;
+    //     height = <64>;
+    //     segment-offset = <0>;
+    //     page-offset = <0>;
+    //     display-offset = <0>;
+    //     multiplex-ratio = <63>;
+        // inversion-on;
+        // prechargep = <0x22>;
+    // };
     glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "okay";
-        dr-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH)>;
+        dr-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "2x";
+        sensitivity = "4x";
         sleep;
         no-taps;
+    };
+        // Rotation config, from Pete
+    // This will change in the future
+    // https://discord.com/channels/719497620560543766/845285481888743434/1206407883777114182
+    input_config {
+        compatible = "zmk,input-configs";
+    
+        cirque_config {
+            device = <&glidepoint>;
+            xy-swap;
+            y-invert;
+            x-invert;
+        };
     };
 };
