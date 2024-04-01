@@ -2,7 +2,13 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_MICRODOX_MOD_LEFT
-	def_bool $(shields_list_contains,microdox_mod_left)
+    def_bool $(shields_list_contains,microdox_mod_left)
 
 config SHIELD_MICRODOX_MOD_RIGHT
-	def_bool $(shields_list_contains,microdox_mod_right)
+    def_bool $(shields_list_contains,microdox_mod_right)
+
+config SHIELD_MICRODOX_MOD_V2_LEFT
+    def_bool $(shields_list_contains,microdox_mod_v2_left)
+
+config SHIELD_MICRODOX_MOD_V2_RIGHT
+    def_bool $(shields_list_contains,microdox_mod_v2_right)

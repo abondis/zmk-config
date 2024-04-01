@@ -5,6 +5,7 @@
  */
 
 #include <nordic/nrf52840_qiaa.dtsi>
+#include "sparkfun_nrf52840_mini-pinctrl.dtsi"
 #include "arduino_pro_micro_pins.dtsi"
 
 / {
@@ -43,7 +44,11 @@
 };
 
 &i2c0 {
-	status = "okay";
+    compatible = "nordic,nrf-twi";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+//	status = "okay";
 //	compatible = "nordic,nrf-twi";
 // port * 32 + pin
 //	sda-pin = <8>;
@@ -51,14 +56,22 @@
 };
 
 &uart0 {
-	status = "okay";
+    compatible = "nordic,nrf-uarte";
+    current-speed = <115200>;
+    pinctrl-0 = <&uart0_default>;
+    pinctrl-1 = <&uart0_sleep>;
+    pinctrl-names = "default", "sleep";
+//	status = "okay";
 //	compatible = "nordic,nrf-uarte";
 //	tx-pin = <17>;
 //	rx-pin = <15>;
 };
 
 &usbd {
-	status = "okay";
+    status = "okay";
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
 };
 
 
